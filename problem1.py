@@ -1,5 +1,13 @@
-a = [int(i) for i in input("Input number A: ")]
-b = int(input("Input number B: "))
+
+try:
+    a = [int(i) for i in input("Input number A: ")]
+    b = int(input("Input number B: "))
+    if b <= 0:
+        raise Exception
+except:
+    print("Inputs should be positive integers")
+    exit()
+
 
 q_array = []
 r = 0
